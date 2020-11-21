@@ -43,6 +43,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 	video.currentTime += 5;
 	if(video.ended){
 		video.currentTime = 0;
+		vidoe.play();
 	}
 	console.log("Current location is " + video.currentTime);
 });
